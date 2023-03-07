@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <style>
+body {margin:0;}
+
+.topnav {
+  position: fixed;
+  overflow: hidden;
+  left: 0;
+  top: 0;
+   width: 100%;
+  background-color: #008080;
+}
+
+.topnav a {
+  float: right;
+  display: block;
+  color: white;
+  text-align: left;
+  padding: 5px 5px;
+  text-decoration: none;
+  font-size: 30px;
+  white-space: nowrap;
+}
+
+.topnav a:hover {
+  background-color: silver;
+  color: black;
+}
+
+.topnav a.active {
+    background-color: silver;
+    color: black;
+}
+
+.topnav ul {
+  list-style: none;
+  margin: 0;
+  padding: 5px 5px;
+}
+
+.topnav li {
+  display: inline;
+  font-weight: bold;
+  font-size: 17px;
+}
+.logo {
+  float: left;
+  color: black
+  padding: 5px; 
+  }
+  .hore-text {
+  text-align: center;
+  position: absolute;
+  top: 70%;
+  left: 55%;
+  font-size: 20px;
+  letter-spacing: 3px;
+  transform: translate(-130%,-100%);
+  color: white;
+  text-shadow: 2px 2px brown;
+}
+
+ .conteiner {
+  padding: 90px;
+  width: 100px
+
+}
+  .content {
+  padding: 150px;
+  width: 95%;
+}
+.header {
+  position: fixed;
+  text-align: center;
+  top: 110%
+  left: 0%;
+  transform: translate(0%,-100%);
+
+}
+.her-text {
+  position: absolute;
+  text-align: right;
+  padding: 20px;
+  transform: translate(100%,50%);
+  
+} 
+.hero-text {
+  position: fixed;
+  text-align: center;
+  padding: 20px 0px ;
+  transform: translate(-120%,-30%);
+  color: violet;
+} 
+
+  .footer {
+   position: fixed;
+   left: 0;
+   bottom: 1px;
+   width: 100%;
+   background-color: #008080;
+   color: white;
+   text-align: center;
+}
+
+input[type=text], select, textarea {
+  width: 90%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display:  inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: 4px;
+  resize: vertical;
+ 
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+input[type=Reset] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=reset]:hover {
+  background-color: #45a049;
+}
+
+.col-5 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col-5 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 30px) {
+  .col-5, .col-5, input[type=submit] {
+    width: 30%;
+    margin-top: 0;
+  }
+  div {
+  width: 100px;
+  padding: 10px;
+  border: 5px solid gray;
+  margin: 0;
+}
+</style>
+ </head>
+<body>
+	<nav>
+		<div class="topnav" id="myTopnav">
+		<ul>
+      <li><a  href="idex.php">HOME</a></li>
+         </ul>
+        <div class="logo">
+          <img src="logo.jpg" width="250" height="100">
+    </div>
+    <div class="hore-text">
+      <h1>INTO THE FUTURE</h1>      
+    </div>
+  </div>  
+    </nav>
+</body>
+    </nav>
+</body>
+<div class="content">
+<body >
+	<fieldset>
+       <div class="hero-text">
+        <legend>
+          <tittle>
+		<button style="background-color: black"><font style="font-size: 40px" color="yellow">Transfer/<br>Placement<br>FORM</font></button>
+</tittle>
+</legend>
+</div>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<body style="background-color: silver; width: 75%; padding-left: 6.5%;">
+  <form action="include.php" method="POST">
+  <div class="row">
+    <div colspan="5">
+      <label for="fname">First Name</label>
+    </div>
+    <div colspan="5">
+      <input type="text" id="Fname" name="Firstname" placeholder="Your name" required>
+    </div>
+  </div>
+<p>&nbsp;</p>
+<div class="row">
+    <div colspan="5">
+      <label for="lname">Surname</label>
+    </div>
+    <div colspan="5">
+      <input type="text" id="Surname" name="Surname" placeholder="Your surname" required>
+    </div>
+  </div>
+<p>&nbsp;</p>
+<div class="row">
+    <div colspan="5">
+      <label for="lname">Last Name</label>
+    </div>
+    <div colspan="5">
+      <input type="text" id="Lastname" name="Lastname" placeholder="Your last name" required>
+    </div>
+  </div>
+  <p>&nbsp;</p>
+  <div class="row">
+    <div colspan="5">
+      <label for="lname">StudentID</label>
+    </div>
+    <div colspan="5">
+      <input type="number" id="StudentID" name="StudentID" placeholder="Your StudentID" required>
+    </div>
+  </div>
+  <p>&nbsp;</p>
+ <div class="row">
+    <div colspan="5">
+      <label for="Birthday">Birthday:</label>
+    </div>
+  <div>
+<input type="date" name="Birthday" required>
+</div>
+</div>
+<p>&nbsp;</p>
+<div class="row">
+  <label for="gender">Genger:</label>
+</div>
+<div>
+<input type="radio" name="Gender" value="male" required> Male
+<input type="radio" name="Gender" value="female" required> Female
+<input type="radio" name="Gender" value="other" required> Other
+</div>
+<p>&nbsp;</p>
+ <p ng-app="myApp" ng-controller="validateCtrl" name="myp" novalidate>Email:<br>
+<input type="email" name="email" ng-model="email" required>
+<span style="color:red" ng-show="myForm.email.$dirty && myForm.email.$invalid">
+<span ng-show="myForm.email.$error.required">Email is required.</span>
+<span ng-show="myForm.email.$error.email">Invalid email address.</span>
+</span>
+</p>
+<script>
+var app = angular.module('myApp', []);
+app.controller('validateCtrl', function($scope) {
+    $scope.email = 'example(17)@gmail.com';
+});
+</script>
+<p>&nbsp;</p>
+<div class="row">
+    <div colspan="5">
+      <label for="Transfer">Transfer_From</label>
+    </div>
+    <div colspan="5">
+      <input type="text" id="Transfer_From" name="Transfer_From" placeholder="Current Institution..." required>
+    </div>
+  </div>
+<p>&nbsp;</p>
+<div class="row">
+    <div colspan="5">
+      <label for="To">Transfer_to</label>
+    </div>
+    <div colspan="5">
+      <input type="text" id="Transfer_to" name="Transfer_to" placeholder="Where you wish to join..." required>
+    </div>
+  </div>
+<p>&nbsp;</p>
+<div class="row">
+    <div colspan="5">
+      <label for="Program">Program</label>
+    </div>
+    <div colspan="5">
+      <input type="text" id="Program" name="Program" placeholder="Course...." required>
+    </div>
+  </div>
+<p>&nbsp;</p>
+<h2>Activities interested in or participating:-</h2>
+<h2>SPORTS</h2>
+<input type="radio"  id="Indoors" name="Sport"><font size="5">Indoors</font><br>
+<select name="Indoors" required="Indoors">
+  <option value="NULL">...</option>
+  <option value="T.Tenis">Table Tenis</option>
+  <option value="Floorball">Floorball</option>
+  <option value="BasketBall">BasketBall</option>
+  <option value="Chase">Chase</option>
+  <option value="Karate">Karate</option>
+  <option value="Judo">Judo</option>
+  <option value="Others">Others</option> 
+  </select>
+<p>&nbsp;</p>
+<input type="radio"  id="Outdoors" name="Sport"><font size="5">Outdoors</font><br>
+<select  name="Outdoors" required="Outdoors">
+  <option value="NULL">......</option>
+  <option value="Rugby">Rugby</option>
+  <option value="Soccer">Soccer</option>
+  <option value="American Football">American Football</option>
+  <option value="Bike">Bike race</option>
+  <option value="Race Course">Race course</option>
+  <option value="Athletics">Athletics</option>
+  <option value="Others">Others</option>
+  </select>
+<p>&nbsp;</p>
+<h2>CLUBS AND SOCIETIES:</h2>
+<input type="radio" id="Science" name="Clubsociety"><font size="5">Science Clubs</font><br>
+<select name="Science" required="Science">
+  <option value="NULL">.....</option>
+  <option value="Math Club">Mathematics Club</option>
+  <option value="Chemistry Club">Chemistry Club</option>
+  <option value="Biology Club">Biology Club</option>
+  <option value="Physics Club">Physics Club</option>
+  <option value="IT Club">Technology Club</option>
+  <option value="Innovation Club">Innovation Club</option>
+  <option value="Others">Others</option>
+</select><br>
+<p>&nbsp;</p>
+<input type="radio" id="General" name="Clubsociety"><font size="5">General Club</font><br>
+<select name="General" required="General">
+  <option value="NULL">.......</option>
+  <option value="Drama Club">Drama Club</option>
+  <option value="Music Club">Music Club</option>
+  <option value="Environment club">Environment Club</option>
+  <option value="Debate Club">Debate Club</option>
+  <option value="Law Club">Law Club</option>
+  <option value="others">Others</option>
+</select><br>
+<p>&nbsp;</p>
+<input type="radio" id="Societies" name="Clubsociety"><font size="5">Societies</font><br>
+<select name="Societies" required="Societies">
+  <option value="NULL">......</option>
+  <option value="Scouts">Scouts</option>
+  <option value="First Aid & Emergency">First Aid & Emergency</option>
+  <option value="Mind Test">Mind test</option>
+  <option value="Guidence & Counselling">Guidence & Counselling</option>
+  <option value="Others">Others</option>
+</select>
+<p>&nbsp;</p>
+<div class="row">
+    <div colspan="5">
+      <label for="subject">Other Skills/View/C.V</label>
+    </div>
+    <div colspan="5">
+      <textarea id="subject" name="Comments" placeholder="Anything we should know of......." 
+      style="height:200px" required="Comments"></textarea>
+    </div>
+  </div>
+  <p>&nbsp;</p>
+<center>
+<button style="background-color: black" type="button"
+onclick="alert('Thank You For Trusting in Us!')"><font size="5" color="green">CLICK ME!</font></button>
+</center>
+<p>&nbsp;</p>
+<div class="row">
+    <input type="SUBMIT" value="SUBMIT">
+  </div>
+<p>&nbsp;</p>
+<div class="row">
+  <input type="RESET" name="RESET">
+</div>
+</body>
+</div>
+</fieldset>
+<div class="footer">
+		<h1>BE THE CHANGE & MAKE THE DIFFERENCE</h1>
+</div>
+</form>
+</html>
